@@ -1,0 +1,115 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background-image:linear-gradient(45deg,rgb(150, 67, 150) 0%,rgb(111, 111, 163) 100%);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+.container h1{
+    background-image:linear-gradient(90deg,red 0%,pink 50%,blue 100%);
+    text-transform:capitalize;
+    -webkit-text-stroke:2px black;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+.border-sitter-container{
+    width:500px;
+    height:300px;
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0px 0px 0px 2px black;
+    display:flex;
+}
+.border-sitter-container .styles{
+    width:50%;
+    height:100%;
+    background-color:rgb(123, 172, 214);
+    border-radius:10px 0 0 10px;
+    box-shadow:0 0 0 2px black;
+    padding:10px;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.border-sitter-container .view{
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.view .target{
+    width:200px;
+    height:100px;
+    background-color: rgb(123,172,214);
+    transition: 0.2s;
+    border:0px dashed black
+}
+.styles .style{
+    width:100%;
+    height:calc(100% / 4);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.border-width .value{
+    width:20px;
+    height:20px;
+    background-color:white;
+    border-radius:3px;
+    display:grid;
+    place-items:center;
+    font-size: 14px;
+}
+.border-width input[type="range"]{
+    accent-color:blue;
+    height:2px;
+}
+label{
+    color:whitesmoke;
+    text-transform:capitalize;
+}
+.border-style lable{
+    width:10%;
+}
+.border-style .border-styles,
+.directions{
+    width:80%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.border-styles .sty,
+.directions .direction{
+    font-size:14px;
+    width:50px;
+    height:30px;
+    display:grid;
+    place-items: center;
+    color:rgb(93, 93, 211);
+    transition: background-color 1s,border-radius 1s,font-weight 1s;
+}
+.active{
+    background-color:white;
+    border-radius:10px;
+    font-weight: bolder;
+}
+.dir label{
+    width:40%;
+}
+.directions{
+    width:60%;
+}

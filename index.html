@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Sitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>sit your border as you like</h1>
+        <div class="border-sitter-container">
+            <div class="styles">
+                <div class="border-width style">
+                    <label>width : </label>
+                    <div class="value">
+                        0
+                    </div>
+                    <input type="range" name="width" id="sit-width" min="0" max="32" value="0" step="1">
+                </div>
+                <div class="border-style style">
+                    <label for="">style :</label>
+                    <div class="border-styles">
+                    <div class="dashed sty active">dashed</div>
+                    <div class="dotted sty">dotted</div>
+                    <div class="groove sty">groove</div>
+                    <div class="solid sty">solid</div>
+                    <div class="ridge sty">ridge</div>
+                    <div class="double sty">double</div>
+                    </div>
+                </div>
+                <div class="border-color style">
+                    <label for="color">
+                        Color :
+                    </label>
+                    <input type="color" name="" id="color">
+                </div>
+                <div class="dir style">
+                    <label for="">direction :</label>
+                    <div class="directions">
+                        <div class="active direction" id="all">all</div>
+                        <div class="direction" id="top">top</div>
+                        <div class="direction" id="right">right</div>
+                        <div class="direction" id="bottom">bottom</div>
+                        <div class="direction" id="left">left</div>
+                    </div>
+                </div>
+            </div>
+            <div class="view">
+                <div class="target">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
